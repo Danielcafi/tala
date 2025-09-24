@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="autoplay=*, encrypted-media=*, accelerometer=*, gyroscope=*, picture-in-picture=*, clipboard-write=*, web-share=*">
+    <meta name="description" content="Borrow and grow with confidence - Get access to fast, flexible, and secure loans up to PHP 25,000 with Tala Philippines">
+    <meta name="keywords" content="Tala borrow, loan application, Philippines, instant loans, flexible repayment">
+    <meta name="author" content="Tala Philippines">
+    <title>Borrow and Grow with Confidence | Tala Philippines</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preload" href="tala1.webp" as="image">
+    <link rel="preload" href="flag.jpg" as="image">
+    <link rel="preload" href="RGB_Tala-closed-white.svg" as="image">
+    <link rel="preload" href="Reviews_Image_4-Eleuterio.webp" as="image">
+    <link rel="preload" href="Reviews_Image_6-Aimee.webp" as="image">
+    <link rel="preload" href="Reviews_Image_2-Raquel.webp" as="image">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>TALA</h1>
+                </div>
+                <div class="header-right">
+                    <div class="country-selector">
+                        <img src="flag.jpg" alt="Philippines Flag" class="country-flag">
+                        <span>Philippines</span>
+                    </div>
+                    <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="borrow.html" class="active">Borrow</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#buo-ang-tiwala">Buo ang Tiwala</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileMenuClose">×</button>
+        <ul class="mobile-menu-list">
+            <li><a href="borrow.html" class="active">Borrow</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#buo-ang-tiwala">Buo ang Tiwala</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="borrow-hero">
+        <div class="container">
+            <div class="borrow-hero-content">
+                <h1 class="borrow-title">
+                    <span class="borrow-green">Borrow and grow</span> 
+                    <span class="borrow-orange">with confidence</span>
+                </h1>
+                <p class="borrow-subtitle">Gain access to a fast, flexible, and secure way to borrow up to PHP 25,000.<br>Kumpletuhin ang application sa loob ng ilang minuto at tumanggap ng instant decision.</p>
+                <button class="download-apply-btn">Download & Apply now!</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flexible Cash Section -->
+    <section class="flexible-cash">
+        <div class="container">
+            <h2 class="section-title">Flexible cash to fit your life</h2>
+            
+            <div class="flexible-content">
+                <div class="phone-mockup-container">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <img src="image-2-1.webp" alt="Tala App Screen - Apply easily" class="phone-image" id="phoneImage1">
+                            <img src="Screen-homepage@2x-1.webp" alt="Tala App Screen - Choose due date" class="phone-image" id="phoneImage2">
+                            <img src="CDD_Phone-Screen-Image_3-Double.webp" alt="Tala App Screen - Double limit" class="phone-image" id="phoneImage3">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="features-list">
+                    <div class="feature-item" data-image="1">
+                        <h3>Apply easily</h3>
+                        <p>Mag-apply sa loob ng ilang minuto sa Tala app. Isang valid ID lang ang kailangan.</p>
+                        <div class="feature-arrow">↓</div>
+                    </div>
+                    
+                    <div class="feature-item" data-image="2">
+                        <h3>Choose your own due date</h3>
+                        <p>May freedom ka para pumili ng due date na tugma sa 'yong income o financial obligations.</p>
+                        <div class="feature-arrow">↓</div>
+                    </div>
+                    
+                    <div class="feature-item" data-image="3">
+                        <h3>Double your limit in months</h3>
+                        <p>Palakihin ang loan limits hanggang sa PHP 25,000 through on-time repayment.</p>
+                        <div class="feature-arrow">↓</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <img src="features-section.png" alt="Tala Features" class="features-image">
+        </div>
+    </section>
+
+    <!-- Features to Help You Grow -->
+    <section class="features-grow">
+        <img src="Screenshot_254.png" alt="Features to help you grow" class="features-grow-image">
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="customer-reviews">
+        <div class="container">
+            <h2 class="section-title">What our customers say</h2>
+            
+            <div class="reviews-carousel">
+                <button class="carousel-btn prev-btn" data-direction="-1" onclick="changeReview(-1)">‹</button>
+                
+                        <div class="review-card-main">
+                            <div class="location-tag">Philippines</div>
+                            <div class="review-content">
+                                <div class="customer-photo">
+                                    <img src="Reviews_Image_4-Eleuterio.webp" alt="Eleuterio" class="customer-img">
+                                    <h4 class="customer-name">Eleuterio</h4>
+                                </div>
+                                <div class="customer-quote">
+                                    <div class="quote-mark">"</div>
+                                    "Tala is kind, understanding and giving. She knows what we're going through and is always willing to help out...I've tried other loaning apps and websites, but they ask for way too much information. With Tala, they only ask me for one ID."
+                                    <div class="quote-mark">"</div>
+                                </div>
+                            </div>
+                            <button class="load-more-btn">Load More</button>
+                        </div>
+                
+                <button class="carousel-btn next-btn" data-direction="1" onclick="changeReview(1)">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="RGB_Tala-closed-white.svg" alt="Tala Logo" class="tala-footer-logo">
+                    </div>
+                    <div class="footer-nav">
+                        <a href="#">Contact</a>
+                        <a href="#">Help</a>
+                        <a href="#">About</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Press</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                    <div class="country-selector-footer">
+                        <span class="country-arrow">→</span>
+                        <span>Philippines</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="country-list">
+                        <a href="#">Kenya</a>
+                        <a href="#">Mexico</a>
+                        <a href="#">India</a>
+                        <a href="#">Global</a>
+                    </div>
+                    <div class="sec-notice">
+                        <p>LOOK FOR TALA IN THE LIST OF SEC REGISTERED LENDING PLATFORMS</p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">X</a>
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">in</a>
+                        <a href="#" class="social-icon">▶</a>
+                        <a href="#" class="social-icon">♪</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-left-content">
+                    <p>For any questions or concerns, please visit gotala.co/help or interact through the official Tala app. Tala is operated by Tala Financing Philippines Inc., a licensed financing company with SEC Registration No. CS201710582 and Certificate of Authority No. 1132, and a registered operator of payment system, with OPS Registration No. OPSCOR-2023-0010. Always study the terms and conditions and the disclosure statement before proceeding with any transaction. Tala is regulated by the Securities and Exchange Commission, with email address at flcd_queries@sec.gov.ph.</p>
+                    <div class="hotline-info">
+                        <p>Contact the Tala Hotline from Monday – Sunday, 7AM to 5PM:</p>
+                        <p class="hotline-note">Important: The phone numbers listed below are strictly for payment-related concerns only.</p>
+                        <p class="support-note">For other questions, please use chat or our support form.</p>
+                        <div class="phone-numbers">
+                            <p class="phone-number">+63 2 8845 9466</p>
+                            <p class="phone-number">For Globe users: 1800-8-755-8252 (Domestic Toll Free)</p>
+                            <p class="phone-number">For Smart/PLDT users: 1800-1-888-3028 (Domestic Toll Free)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-right-content">
+                    <p>Tala is a trusted global company that offers financial services through our mobile app. We treat the data of our users and our team with care. We protect your information and follow best practices for data security and privacy. More details about how we collect and process your personal data can be found in our Privacy Notice.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Chat Button -->
+    <button class="floating-chat-btn" onclick="openChat()"></button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
