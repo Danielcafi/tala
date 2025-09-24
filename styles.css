@@ -2039,83 +2039,216 @@ body {
 }
 
 .customer-reviews {
-    padding: 100px 0;
-    background: #ffffff;
-}
-
-.reviews-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto 60px;
-}
-
-.review-card {
-    background: #f8f9fa;
-    padding: 40px 30px;
-    border-radius: 15px;
-    text-align: left;
-}
-
-.customer-info {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #f5f5f0 0%, #f0f0e8 100%);
+    position: relative;
+    overflow: hidden;
+    height: 600px;
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 20px;
 }
 
-.customer-flag {
-    font-size: 1.5rem;
+.customer-reviews .container {
+    max-width: 1200px;
+    padding: 0 30px;
 }
 
-.customer-info h4 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #333333;
-    margin: 0;
+.customer-reviews::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500"><path d="M100,200 Q200,100 300,200 T500,200 T700,200 T900,200" stroke="%23d0d0c0" stroke-width="2" fill="none" opacity="0.3"/><path d="M50,300 Q150,250 250,300 T450,300 T650,300 T850,300" stroke="%23d0d0c0" stroke-width="1.5" fill="none" opacity="0.2"/><circle cx="200" cy="150" r="3" fill="%23ff6b35" opacity="0.6"/><circle cx="600" cy="180" r="2" fill="%2387ceeb" opacity="0.6"/><circle cx="800" cy="220" r="2" fill="%2387ceeb" opacity="0.6"/></svg>');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    z-index: 1;
 }
 
-.review-card blockquote {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #666666;
-    font-style: italic;
-    margin: 0;
-    quotes: """ """ "'" "'";
+.customer-reviews .section-title {
+    color: #1e4a4a;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
 }
 
-.review-card blockquote:before {
-    content: open-quote;
-    font-size: 2rem;
-    color: #00A8A8;
-    font-weight: bold;
-}
-
-.review-card blockquote:after {
-    content: close-quote;
-    font-size: 2rem;
-    color: #00A8A8;
-    font-weight: bold;
-}
-
-.load-more-btn {
-    background: #00A8A8;
-    color: white;
-    border: none;
-    padding: 15px 40px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: block;
+.reviews-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
+.carousel-btn {
+    background: white;
+    color: #333;
+    border: 2px solid #ddd;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 3;
+    flex-shrink: 0;
+}
+
+.carousel-btn:hover {
+    background: #f8f9fa;
+    border-color: #00A8A8;
+    color: #00A8A8;
+}
+
+.review-card-main {
+    background: white;
+    border-radius: 20px;
+    padding: 0;
+    max-width: 1000px;
+    width: 100%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.location-tag {
+    background: #1e4a4a;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    display: inline-block;
+    margin: 30px auto 0;
+    width: fit-content;
+    min-width: 140px;
+    text-align: center;
+}
+
+.review-content {
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+    align-items: center;
+}
+
+.customer-photo {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.customer-photo img {
+    width: 220px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
+}
+
+.customer-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1e4a4a;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.customer-quote {
+    width: 60%;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: #1e4a4a;
+    font-style: italic;
+    margin: 0;
+    position: relative;
+    padding: 20px 0;
+}
+
+.quote-mark {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    font-size: 8rem;
+    color: #1e4a4a;
+    font-family: serif;
+    line-height: 1;
+    opacity: 0.08;
+    z-index: 1;
+}
+
+.quote-mark:last-child {
+    top: auto;
+    bottom: -40px;
+    right: -20px;
+    left: auto;
+}
+
+.load-more-btn {
+    background: transparent;
+    color: #00A8A8;
+    border: 2px solid #00A8A8;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    width: 160px;
+    height: 48px;
+    transition: all 0.3s ease;
+}
+
 .load-more-btn:hover {
-    background: #008080;
-    transform: translateY(-2px);
+    background: #00A8A8;
+    color: white;
+}
+
+/* Floating Chat Button */
+.floating-chat-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 56px;
+    height: 56px;
+    background: #ff6b35;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(255, 107, 53, 0.4);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.floating-chat-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 25px rgba(255, 107, 53, 0.6);
+}
+
+.floating-chat-btn::before {
+    content: '💬';
+    font-size: 24px;
+    color: white;
 }
 
 /* Active navigation link */
@@ -2126,6 +2259,63 @@ body {
 }
 
 /* Responsive Design for Borrow Page */
+@media (max-width: 900px) {
+    .customer-reviews {
+        height: auto;
+        padding: 40px 0;
+    }
+    
+    .reviews-carousel {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+    }
+    
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+    
+    .review-card-main {
+        max-width: 100%;
+    }
+    
+    .review-content {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+    
+    .customer-photo {
+        width: 100%;
+    }
+    
+    .customer-photo img {
+        width: 180px;
+        height: 200px;
+        clip-path: none;
+        border-radius: 50%;
+    }
+    
+    .customer-quote {
+        width: 100%;
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .customer-reviews .section-title {
+        font-size: 2.5rem;
+    }
+    
+    .floating-chat-btn {
+        width: 48px;
+        height: 48px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
 @media (max-width: 768px) {
     .borrow-title {
         font-size: 2.5rem;
@@ -2153,9 +2343,54 @@ body {
         padding: 0;
     }
     
-    .reviews-grid {
-        grid-template-columns: 1fr;
+    .reviews-carousel {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+    }
+    
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+    
+    .review-card-main {
+        max-width: 100%;
+    }
+    
+    .review-content {
+        flex-direction: column;
+        padding: 30px 20px;
         gap: 30px;
+    }
+    
+    .customer-photo {
+        width: 100%;
+    }
+    
+    .customer-photo img {
+        width: 180px;
+        height: 200px;
+        clip-path: none;
+        border-radius: 50%;
+    }
+    
+    .customer-quote {
+        width: 100%;
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .customer-reviews .section-title {
+        font-size: 2.5rem;
+    }
+    
+    .floating-chat-btn {
+        width: 48px;
+        height: 48px;
+        bottom: 20px;
+        right: 20px;
     }
     
     .section-title {

@@ -13,6 +13,9 @@
     <link rel="preload" href="tala1.webp" as="image">
     <link rel="preload" href="flag.jpg" as="image">
     <link rel="preload" href="RGB_Tala-closed-white.svg" as="image">
+    <link rel="preload" href="Reviews_Image_4-Eleuterio.webp" as="image">
+    <link rel="preload" href="Reviews_Image_6-Aimee.webp" as="image">
+    <link rel="preload" href="Reviews_Image_2-Raquel.webp" as="image">
 </head>
 <body>
     <!-- Header -->
@@ -129,33 +132,27 @@
         <div class="container">
             <h2 class="section-title">What our customers say</h2>
             
-            <div class="reviews-grid">
-                <div class="review-card">
-                    <div class="customer-info">
-                        <div class="customer-flag">🇵🇭</div>
-                        <h4>Eleuterio</h4>
+            <div class="reviews-carousel">
+                <button class="carousel-btn prev-btn" onclick="changeReview(-1)">‹</button>
+                
+                <div class="review-card-main">
+                    <div class="location-tag">Philippines</div>
+                    <div class="review-content">
+                        <div class="customer-photo">
+                            <img src="Reviews_Image_2-Raquel.webp" alt="Raquel" class="customer-img">
+                            <h4 class="customer-name">Raquel</h4>
+                        </div>
+                        <div class="customer-quote">
+                            <div class="quote-mark">"</div>
+                            "With Tala, I don't just get to help myself, I get to help other people too. I'm able to help friends in need by referring them to the app."
+                            <div class="quote-mark">"</div>
+                        </div>
                     </div>
-                    <blockquote>"Tala is kind, understanding and giving. She knows what we're going through and is always willing to help out...I've tried other loaning apps and websites, but they ask for way too much information. With Tala, they only ask me for one ID."</blockquote>
+                    <button class="load-more-btn">Load More</button>
                 </div>
                 
-                <div class="review-card">
-                    <div class="customer-info">
-                        <div class="customer-flag">🇵🇭</div>
-                        <h4>Aimee</h4>
-                    </div>
-                    <blockquote>"It's so easy to get a loan from Tala. I can always count on it. Tala is really like a companion that supports me and helps me achieve my goals."</blockquote>
-                </div>
-                
-                <div class="review-card">
-                    <div class="customer-info">
-                        <div class="customer-flag">🇵🇭</div>
-                        <h4>Raquel</h4>
-                    </div>
-                    <blockquote>"With Tala, I don't just get to help myself, I get to help other people too. I'm able to help friends in need by referring them to the app."</blockquote>
-                </div>
+                <button class="carousel-btn next-btn" onclick="changeReview(1)">›</button>
             </div>
-            
-            <button class="load-more-btn">Load More</button>
         </div>
     </section>
 
@@ -222,6 +219,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- Floating Chat Button -->
+    <button class="floating-chat-btn" onclick="openChat()"></button>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

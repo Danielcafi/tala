@@ -177,7 +177,65 @@ if (featureItems.length > 0 && phoneImages.length > 0) {
     // Header scroll effect
     const header = document.querySelector('.header');
     
-    // Smooth scrolling for anchor links
+    // Customer Reviews Carousel
+let currentReviewIndex = 2; // Start with Raquel (third customer)
+const reviews = [
+    {
+        name: "Eleuterio",
+        location: "Philippines",
+        quote: "\"Tala is kind, understanding and giving. She knows what we're going through and is always willing to help out...I've tried other loaning apps and websites, but they ask for way too much information. With Tala, they only ask me for one ID.\"",
+        image: "Reviews_Image_4-Eleuterio.webp"
+    },
+    {
+        name: "Aimee",
+        location: "Philippines", 
+        quote: "\"It's so easy to get a loan from Tala. I can always count on it. Tala is really like a companion that supports me and helps me achieve my goals.\"",
+        image: "Reviews_Image_6-Aimee.webp"
+    },
+    {
+        name: "Raquel",
+        location: "Philippines",
+        quote: "\"With Tala, I don't just get to help myself, I get to help other people too. I'm able to help friends in need by referring them to the app.\"",
+        image: "Reviews_Image_2-Raquel.webp"
+    }
+];
+
+function changeReview(direction) {
+    currentReviewIndex += direction;
+    
+    if (currentReviewIndex >= reviews.length) {
+        currentReviewIndex = 0;
+    } else if (currentReviewIndex < 0) {
+        currentReviewIndex = reviews.length - 1;
+    }
+    
+    updateReviewDisplay();
+}
+
+function updateReviewDisplay() {
+    const review = reviews[currentReviewIndex];
+    const locationTag = document.querySelector('.location-tag');
+    const customerImg = document.querySelector('.customer-img');
+    const customerName = document.querySelector('.customer-name');
+    const customerQuote = document.querySelector('.customer-quote');
+    
+    if (locationTag) locationTag.textContent = review.location;
+    if (customerImg) customerImg.src = review.image;
+    if (customerName) customerName.textContent = review.name;
+    if (customerQuote) customerQuote.textContent = review.quote;
+}
+
+// Initialize the carousel when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    updateReviewDisplay();
+});
+
+// Floating Chat Button
+function openChat() {
+    alert('Chat functionality would open here!');
+}
+
+// Smooth scrolling for anchor links
     const anchorLinks = document.querySelectorAll('a[href^="#"]');
     anchorLinks.forEach(link => {
         link.addEventListener('click', function(e) {
