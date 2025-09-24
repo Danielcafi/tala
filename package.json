@@ -2,19 +2,21 @@
   "name": "tala-website",
   "version": "1.0.0",
   "description": "Tala Loan App Philippines - Clone Website",
-  "main": "index.html",
+  "main": "public/index.html",
   "scripts": {
-    "dev": "live-server --port=3000 --open=/index.html",
-    "start": "live-server --port=3000 --open=/index.html",
-    "build": "echo 'No build process needed for static site'",
-    "serve": "live-server --port=8080 --open=/index.html"
+    "dev": "live-server --port=3000 --open=/public/index.html",
+    "start": "live-server --port=3000 --open=/public/index.html",
+    "build": "echo 'Static site - no build needed'",
+    "serve": "live-server --port=8080 --open=/public/index.html",
+    "vercel-build": "echo 'No build process needed for static site'"
   },
   "keywords": [
     "tala",
     "loan",
     "philippines",
     "financial",
-    "website"
+    "website",
+    "static-site"
   ],
   "author": "Tala Philippines",
   "license": "MIT",
@@ -24,10 +26,10 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/tala-website.git"
+    "url": "https://github.com/Danielcafi/tala.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/tala-website/issues"
+    "url": "https://github.com/Danielcafi/tala/issues"
   },
-  "homepage": "https://github.com/your-username/tala-website#readme"
+  "homepage": "https://github.com/Danielcafi/tala#readme"
 }
