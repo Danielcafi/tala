@@ -223,7 +223,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: url('tala1.webp') center center/cover no-repeat;
+    background: url('tala1.webp') center center/contain no-repeat;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -231,8 +231,9 @@ body {
     overflow: hidden;
     padding-top: 100px;
     background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position: center center;
+    background-color: #1e4a4a;
 }
 
 .hero::before {
@@ -2484,10 +2485,11 @@ section.in-view {
 @media (max-width: 768px) {
     .hero {
         background-attachment: scroll;
-        background-size: cover;
+        background-size: contain;
         background-position: center center;
         min-height: 100vh;
         padding-top: 80px;
+        background-color: #1e4a4a;
     }
     
     .hero-content {
@@ -2534,10 +2536,11 @@ section.in-view {
 @media (max-width: 480px) {
     .hero {
         background-attachment: scroll;
-        background-size: cover;
+        background-size: contain;
         background-position: center center;
         min-height: 100vh;
         padding-top: 70px;
+        background-color: #1e4a4a;
     }
     
     .hero-content {
