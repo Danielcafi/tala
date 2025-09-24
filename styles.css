@@ -2482,8 +2482,22 @@ section.in-view {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .hero {
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center center;
+        min-height: 100vh;
+        padding-top: 80px;
+    }
+    
     .hero-content {
         padding: 20px 0;
+        min-height: 70vh;
+    }
+    
+    .cta-button {
+        font-size: 1rem;
+        padding: 12px 24px;
     }
     
     .feature-grid {
@@ -2518,8 +2532,39 @@ section.in-view {
 }
 
 @media (max-width: 480px) {
+    .hero {
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center center;
+        min-height: 100vh;
+        padding-top: 70px;
+    }
+    
+    .hero-content {
+        padding: 15px 0;
+        min-height: 60vh;
+    }
+    
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+    
     .container {
         padding: 0 15px;
+    }
+    
+    .header {
+        padding: 15px 0;
+    }
+    
+    .logo {
+        font-size: 1.8rem;
+    }
+    
+    .country-selector {
+        padding: 8px 12px;
+        font-size: 0.9rem;
     }
     
     .maya-content h2 {
