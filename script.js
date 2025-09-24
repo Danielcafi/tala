@@ -178,7 +178,7 @@ if (featureItems.length > 0 && phoneImages.length > 0) {
     const header = document.querySelector('.header');
     
     // Customer Reviews Carousel
-let currentReviewIndex = 2; // Start with Raquel (third customer)
+let currentReviewIndex = 0; // Start with Eleuterio (first customer)
 const reviews = [
     {
         name: "Eleuterio",
@@ -222,59 +222,62 @@ function updateReviewDisplay() {
     const customerImg = document.querySelector('.customer-img');
     const customerName = document.querySelector('.customer-name');
     const customerQuote = document.querySelector('.customer-quote');
+    const reviewCard = document.querySelector('.review-card-main');
     
     console.log('Found elements:', {
         locationTag: !!locationTag,
         customerImg: !!customerImg,
         customerName: !!customerName,
-        customerQuote: !!customerQuote
+        customerQuote: !!customerQuote,
+        reviewCard: !!reviewCard
     });
     
-    if (locationTag) locationTag.textContent = review.location;
-    if (customerImg) {
-        customerImg.src = review.image;
-        customerImg.alt = review.name;
-        console.log('Updated image src to:', review.image);
+    // Add fade out effect
+    if (reviewCard) {
+        reviewCard.style.opacity = '0.7';
+        reviewCard.style.transform = 'translateX(-20px)';
     }
-    if (customerName) customerName.textContent = review.name;
-    if (customerQuote) {
-        // Update the quote text content, preserving the quote marks
-        customerQuote.innerHTML = `
-            <div class="quote-mark">"</div>
-            ${review.quote}
-            <div class="quote-mark">"</div>
-        `;
-    }
+    
+    setTimeout(() => {
+        if (locationTag) locationTag.textContent = review.location;
+        if (customerImg) {
+            customerImg.src = review.image;
+            customerImg.alt = review.name;
+            console.log('Updated image src to:', review.image);
+        }
+        if (customerName) customerName.textContent = review.name;
+        if (customerQuote) {
+            // Update the quote text content, preserving the quote marks
+            customerQuote.innerHTML = `
+                <div class="quote-mark">"</div>
+                ${review.quote}
+                <div class="quote-mark">"</div>
+            `;
+        }
+        
+        // Add fade in effect
+        if (reviewCard) {
+            reviewCard.style.opacity = '1';
+            reviewCard.style.transform = 'translateX(0)';
+        }
+    }, 250);
 }
+
+// Make functions globally accessible immediately
+window.changeReview = changeReview;
+window.updateReviewDisplay = updateReviewDisplay;
 
 // Initialize the carousel when page loads
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM Content Loaded - Initializing carousel');
     updateReviewDisplay();
     
-    // Add event listeners to carousel buttons
-    const prevBtn = document.querySelector('.prev-btn');
-    const nextBtn = document.querySelector('.next-btn');
-    
-    if (prevBtn) {
-        prevBtn.addEventListener('click', function() {
-            console.log('Previous button clicked');
-            changeReview(-1);
-        });
-    }
-    
-    if (nextBtn) {
-        nextBtn.addEventListener('click', function() {
-            console.log('Next button clicked');
-            changeReview(1);
-        });
-    }
-    
-    // Make functions globally accessible
-    window.changeReview = changeReview;
-    window.updateReviewDisplay = updateReviewDisplay;
-    
     console.log('Carousel initialized, current index:', currentReviewIndex);
-    console.log('Buttons found:', { prevBtn: !!prevBtn, nextBtn: !!nextBtn });
+    console.log('Total reviews:', reviews.length);
+    console.log('Functions available:', { 
+        changeReview: typeof window.changeReview, 
+        updateReviewDisplay: typeof window.updateReviewDisplay 
+    });
 });
 
 // Floating Chat Button

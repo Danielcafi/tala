@@ -95,6 +95,14 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.country-flag-footer {
+    width: 20px;
+    height: 15px;
+    margin-right: 8px;
+    border-radius: 2px;
+    object-fit: cover;
+}
+
 
 .menu-toggle {
     background: none;
@@ -1312,7 +1320,7 @@ body {
 
 /* Footer */
 .footer {
-    background: #003333;
+    background: #1e4a4a;
     color: white;
     padding: 60px 0 40px;
 }
@@ -1357,8 +1365,8 @@ body {
 }
 
 .country-selector-footer {
-    background: white;
-    color: #333;
+    background: #87ceeb;
+    color: white;
     padding: 12px 18px;
     border-radius: 25px;
     display: inline-flex;
@@ -1398,13 +1406,14 @@ body {
 }
 
 .sec-notice {
-    margin-bottom: 20px;
+    text-align: center;
+    margin: 30px 0;
 }
 
 .sec-notice p {
-    color: #00A8A8;
+    color: #90EE90;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin: 0;
 }
 
@@ -2039,13 +2048,11 @@ body {
 }
 
 .customer-reviews {
-    padding: 60px 0;
+    padding: 80px 0;
     background: linear-gradient(135deg, #f5f5f0 0%, #f0f0e8 100%);
     position: relative;
     overflow: hidden;
-    height: 600px;
-    display: flex;
-    align-items: center;
+    min-height: 700px;
     visibility: visible;
     opacity: 1;
 }
@@ -2071,14 +2078,15 @@ body {
 
 .customer-reviews .section-title {
     color: #1e4a4a;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     position: relative;
     z-index: 2;
     display: block;
     visibility: visible;
+    text-transform: capitalize;
 }
 
 .reviews-carousel {
@@ -2131,6 +2139,8 @@ body {
     overflow: hidden;
     visibility: visible;
     opacity: 1;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(0);
 }
 
 .location-tag {
@@ -2149,9 +2159,10 @@ body {
 
 .review-content {
     display: flex;
-    padding: 40px;
-    gap: 40px;
-    align-items: center;
+    padding: 50px;
+    gap: 50px;
+    align-items: flex-start;
+    min-height: 400px;
 }
 
 .customer-photo {
@@ -2162,12 +2173,13 @@ body {
 }
 
 .customer-photo img {
-    width: 220px;
-    height: 240px;
+    width: 250px;
+    height: 280px;
     object-fit: cover;
     border-radius: 20px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
     clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
+    transition: all 0.5s ease-in-out;
 }
 
 .customer-name {
@@ -2180,13 +2192,14 @@ body {
 
 .customer-quote {
     width: 60%;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 1.4;
     color: #1e4a4a;
     font-style: italic;
     margin: 0;
     position: relative;
     padding: 20px 0;
+    transition: all 0.5s ease-in-out;
 }
 
 .quote-mark {
