@@ -2853,3 +2853,254 @@ section.in-view {
         font-size: 28px;
     }
 }
+
+/* Reviews Page Specific Styles */
+.reviews-hero {
+    background: linear-gradient(135deg, #EA9357 0%, #FFBC7D 100%);
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+}
+
+.reviews-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.reviews-main-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.highlight-green {
+    color: #BEC658;
+}
+
+.reviews-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.reviews-subtitle .link {
+    color: #BEC658;
+    text-decoration: underline;
+}
+
+.stars-icon {
+    margin-top: 20px;
+}
+
+.stars-image {
+    width: 120px;
+    height: auto;
+}
+
+.featured-quote {
+    padding: 60px 0;
+    background: #F5F6F0;
+}
+
+.quote-card {
+    text-align: center;
+}
+
+.quote-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.customer-stories-reviews {
+    padding: 100px 0;
+    background: white;
+}
+
+.stories-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.story-item {
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.story-item-alt {
+    flex-direction: row-reverse;
+}
+
+.story-image-container {
+    flex: 0 0 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.story-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.7);
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.play-button:hover {
+    background: rgba(0,0,0,0.9);
+}
+
+.youtube-icon {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
+
+.story-content {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.customer-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #083032;
+    margin-bottom: 20px;
+}
+
+.customer-quote {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    font-style: italic;
+    margin: 0;
+    position: relative;
+}
+
+.customer-quote::before {
+    content: '"';
+    font-size: 3rem;
+    color: #EA9357;
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    font-family: serif;
+}
+
+.google-play-section {
+    padding: 80px 0;
+    background: #20BEC6;
+    text-align: center;
+    color: white;
+}
+
+.google-play-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.google-play-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.google-play-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.google-play-badge {
+    margin-top: 30px;
+}
+
+.play-badge-image {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.play-badge-image:hover {
+    transform: scale(1.05);
+}
+
+/* Reviews Page Mobile Styles */
+@media (max-width: 768px) {
+    .reviews-main-title {
+        font-size: 2rem;
+    }
+    
+    .reviews-subtitle {
+        font-size: 1rem;
+    }
+    
+    .stories-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .story-item,
+    .story-item-alt {
+        flex-direction: column;
+    }
+    
+    .story-image-container {
+        flex: none;
+        height: 250px;
+    }
+    
+    .story-content {
+        padding: 20px;
+    }
+    
+    .customer-name {
+        font-size: 1.3rem;
+    }
+    
+    .customer-quote {
+        font-size: 1rem;
+    }
+    
+    .google-play-title {
+        font-size: 2rem;
+    }
+    
+    .google-play-subtitle {
+        font-size: 1rem;
+    }
+    
+    .play-badge-image {
+        width: 150px;
+    }
+}
