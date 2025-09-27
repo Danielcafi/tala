@@ -563,9 +563,21 @@ window.zESettings = {
 </script>
 
 <script>
-  zE('webWidget:on', 'load', function () {
-    zE('webWidget', 'open');
-  });
+  // Updated Zendesk widget implementation with error handling
+  try {
+    zE(function() {
+      zE('webWidget', 'on', 'open', function() {
+        console.log('Zendesk widget opened');
+      });
+      
+      zE('webWidget', 'on', 'close', function() {
+        console.log('Zendesk widget closed');
+      });
+    });
+  } catch (error) {
+    console.log('Zendesk widget initialization error:', error);
+    // Continue without breaking the page
+  }
 </script>
 
   </main>
