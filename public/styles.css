@@ -5,32 +5,15 @@
     box-sizing: border-box;
 }
 
-*:focus {
-    outline: none;
-}
-
-*::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
-}
-
 body {
-    font-family: 'Inter', sans-serif !important;
-    line-height: 1.6 !important;
-    color: #333 !important;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-color: #fff !important;
-    border: none !important;
-    outline: none !important;
-}
-
-* {
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
+    background-color: #fff;
 }
 
 /* Override conflicting styles from external CSS */

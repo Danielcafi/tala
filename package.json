@@ -4,11 +4,10 @@
   "description": "Tala Loan App Philippines - Clone Website",
   "main": "public/index.html",
   "scripts": {
+    "build": "echo 'Static site - no build needed'",
     "dev": "live-server --port=3000 --open=/public/index.html",
     "start": "live-server --port=3000 --open=/public/index.html",
-    "build": "echo 'Static site - no build needed'",
-    "serve": "live-server --port=8080 --open=/public/index.html",
-    "vercel-build": "echo 'No build process needed for static site'"
+    "serve": "live-server --port=8080 --open=/public/index.html"
   },
   "keywords": [
     "tala",
