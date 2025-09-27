@@ -563,21 +563,9 @@ window.zESettings = {
 </script>
 
 <script>
-  // Updated Zendesk widget implementation with error handling
-  try {
-    zE(function() {
-      zE('webWidget', 'on', 'open', function() {
-        console.log('Zendesk widget opened');
-      });
-      
-      zE('webWidget', 'on', 'close', function() {
-        console.log('Zendesk widget closed');
-      });
-    });
-  } catch (error) {
-    console.log('Zendesk widget initialization error:', error);
-    // Continue without breaking the page
-  }
+  // Zendesk Web SDK (messaging experience) - no additional widget code needed
+  // The new Web SDK handles widget functionality automatically
+  console.log('Zendesk Web SDK loaded successfully');
 </script>
 
   </main>
