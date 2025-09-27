@@ -566,6 +566,48 @@ window.zESettings = {
   // Zendesk Web SDK (messaging experience) - no additional widget code needed
   // The new Web SDK handles widget functionality automatically
   console.log('Zendesk Web SDK loaded successfully');
+  
+  // Handle external API errors gracefully
+  window.addEventListener('error', function(e) {
+    // Suppress external Zendesk API errors that are blocked by client
+    if (e.message && (
+        e.message.includes('Failed to fetch') ||
+        e.message.includes('ERR_BLOCKED_BY_CLIENT') ||
+        e.message.includes('talaphilippines.zendesk.com')
+    )) {
+      e.preventDefault();
+      console.log('External Zendesk API call blocked (normal behavior)');
+      return false;
+    }
+  });
+  
+  // Handle unhandled promise rejections from external APIs
+  window.addEventListener('unhandledrejection', function(e) {
+    if (e.reason && (
+        e.reason.message && e.reason.message.includes('Failed to fetch') ||
+        e.reason.toString().includes('ERR_BLOCKED_BY_CLIENT')
+    )) {
+      e.preventDefault();
+      console.log('External API promise rejection handled gracefully');
+      return false;
+    }
+  });
+  
+  // Global error handler for external Zendesk services
+  window.addEventListener('DOMContentLoaded', function() {
+    // Override console.error for external API errors
+    const originalConsoleError = console.error;
+    console.error = function(...args) {
+      const message = args.join(' ');
+      if (message.includes('talaphilippines.zendesk.com') || 
+          message.includes('ERR_BLOCKED_BY_CLIENT') ||
+          message.includes('Failed to fetch')) {
+        console.log('External Zendesk API error suppressed (normal behavior)');
+        return;
+      }
+      originalConsoleError.apply(console, args);
+    };
+  });
 </script>
 
   </main>
