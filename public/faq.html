@@ -1,667 +1,374 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <!-- v26430 -->
-
-
-  <title>Tala Philippines</title>
-
-  <meta name="csrf-param" content="authenticity_token">
-<meta name="csrf-token" content="hc:meta:server:YkkHCg_UehHL38fKh0YWQg3aIgEoW4hbT-RXZdGelzUXys2RmXk_VgNL5S6g6v-4KS-SUvP7LrXaRJQ5d0rSVA">
-
-  <link rel="canonical" href="https://talaphilippines.zendesk.com/hc/en-us">
-<link rel="alternate" hreflang="en-us" href="https://talaphilippines.zendesk.com/hc/en-us">
-<link rel="alternate" hreflang="fil" href="https://talaphilippines.zendesk.com/hc/fil">
-<link rel="alternate" hreflang="x-default" href="https://talaphilippines.zendesk.com/hc/en-us">
-
-  <link rel="stylesheet" href="//static.zdassets.com/hc/assets/application-3566fe63d022e25f84041ca8d54a727b.css" media="all" id="stylesheet" />
-    <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
-    <link rel="stylesheet" href="//static.zdassets.com/hc/assets/theming_v1_support-e05586b61178dcde2a13a3d323525a18.css" media="all" />
-  <link rel="stylesheet" type="text/css" href="/hc/theming_assets/2156677/360002513671/style.css?digest=40361572269588">
-
-  <link rel="icon" type="image/x-icon" href="/hc/theming_assets/01HZPHXEGW41195K2KV9MMGZ0S">
-
-    <script src="//static.zdassets.com/hc/assets/jquery-09d07e20ce042ef10e301661ad1f316c.js"></script>
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C9QH94T7HH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-C9QH94T7HH');
-</script>
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-
-
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
-<link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.10.0/styles/github.min.css" />
-<link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.magnific-popup/1.0.0/magnific-popup.css" />
-<script src="//cdn.jsdelivr.net/jquery.magnific-popup/1.0.0/jquery.magnific-popup.min.js"></script>
-<script src="//cdn.jsdelivr.net/highlight.js/9.10.0/highlight.min.js"></script>
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/store.js/1.3.20/store.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js"></script>
-
-
-<script src="/hc/theming_assets/01HZPHXDERQJVXG5T502VCBMRP"></script>
-<link rel="stylesheet" href="/hc/theming_assets/01HZPHXC6D9XSP8GJDXDF1FHFD" />
-<script src="/hc/theming_assets/01HZPHXBAZSTH4ZBJ6V4D4JPVF"></script>
-<script src="/hc/theming_assets/01HZPHXDJQ8M4QZ62C4HS2ES03"></script>
-<script src="/hc/theming_assets/01HZPHXASJM2253QMPNCPZYQF5"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const path = window.location.pathname;
-    const search = window.location.search;
-
-    const isSignin = /\/hc\/[^\/]+\/signin/.test(path);
-    const isRequestNew = /\/hc\/[^\/]+\/requests\/new/.test(path);
-
-    // Exclude specific forms from redirect
-    const isExcludedForm =
-      search.includes("ticket_form_id=30343703737748") ||
-      search.includes("ticket_form_id=24154195154708");
-
-    if ((isSignin || (isRequestNew && !isExcludedForm))) {
-      const locale = path.split('/')[2] || 'en-us';
-      window.location.replace(`/hc/${locale}`);
-    }
-  });
-</script>
-
-  <script type="text/javascript" src="/hc/theming_assets/2156677/360002513671/script.js?digest=40361572269588"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Tala Philippines</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e4a4a 0%, #20BEC6 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .search-section {
+            background: white;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .search-box {
+            display: flex;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .search-box input {
+            flex: 1;
+            padding: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        
+        .search-box button {
+            background: #20BEC6;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        
+        .search-box button:hover {
+            background: #1e4a4a;
+        }
+        
+        .faq-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .category-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .category-card h3 {
+            color: #1e4a4a;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .category-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .category-card li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .category-card li:last-child {
+            border-bottom: none;
+        }
+        
+        .category-card a {
+            color: #333;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .category-card a:hover {
+            color: #20BEC6;
+        }
+        
+        .floating-chat {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #ff6b35;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(255, 107, 53, 0.4);
+            z-index: 1000;
+        }
+        
+        .floating-chat:hover {
+            transform: scale(1.1);
+        }
+        
+        .contact-section {
+            background: white;
+            padding: 3rem 2rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .contact-section h2 {
+            color: #1e4a4a;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .contact-btn {
+            background: #20BEC6;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+        
+        .contact-btn:hover {
+            background: #1e4a4a;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .search-box {
+                flex-direction: column;
+            }
+            
+            .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
-<body class="">
-  
-  
-  
-
-  <div class="alert hidden"> 
-    
-  <div class="alert-header">
-    ZERO FEES until August 6 only!
-  </div>
-
-  <div class="alert-content">
-Use Tala QR to repay your loan. It's FASTER, EASIER, and FREE! <a href="https://talaphilippines.zendesk.com/hc/en-us/articles/34107353413140-How-do-I-repay-with-Tala-QR" style="color: #e3feffff"><u>Learn more ></u></a>
-</div><!--'hc_notification' for maintenance or default  -->
-</div>
-
-<div class="layout">
-  <div class="layout__head">
-    <header class="topbar is-hidden topbar_image" data-topbar>
-      <div class="topbar__nav container">
-        <div class="container-inner topbar__container-inner">
-          <div class="topbar__inner">
-            <div class="topbar__col clearfix">
-              <div class="topbar__sidenav">
-                <div data-sidenav></div>
-              </div>
-              <button type="button" role="button" aria-label="Toggle Navigation" class="lines-button x" data-toggle-menu>
-                    <span class="lines"></span></button>
-              <div class="logo-wrapper">
-                <div class="logo">
-                  <a title="Home" href="/hc/en-us">
-                    <img class="logo--default" src="/hc/theming_assets/01HZPHXE7H31XV757Y00EAVTA7" alt="" />
-                    <img class="logo--white" src="/hc/theming_assets/01HZPHXECXWAX6K45W60G4J289" alt="" />
-                  </a>
-                </div>
-              </div>
-              <button type="button" role="button" class="topbar__btn-search">
-                <img class="topbar__btn-search-img" src="/hc/theming_assets/01HZPHXCXTG0FP5RHX36D5NDR1">
-              </button>
-            </div>
-            <div class="topbar__col topbar__menu">
-              <div class="topbar__collapse" data-menu>
-                <div class="topbar__controls">
-                  
-                    <a href="https://tala.co/" class="topbar__link">
-                      
-                        Website
-                      
-                    </a>
-                  
-                  <a class="topbar__link submit-a-request" href="/hc/en-us/requests/new">Submit a request</a>
-            <!--   <a class="login" data-auth-action="signin" role="button" rel="nofollow" title="Opens a dialog" href="/hc/en-us/signin?return_to=https%3A%2F%2Ftalaphilippines.zendesk.com%2Fhc%2Fen-us&amp;locale=en-us">Sign in</a>
- -->
-                </div>
-              </div>
-            </div>
-          </div>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>Help Center</h1>
+            <p>Find answers to your questions about Tala</p>
         </div>
-      </div>
-
-      <div class="container">
-        <div class="hero-unit is-hidden" data-hero-unit>
-          <div class="container-inner search-box search-box--hero-unit" data-search-box>
-            <div class="intro-title">
-              
-                What can we help you with?
-              
-            </div>
-           <form role="search" class="search" data-search="" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" autocomplete="off" /><input type="search" name="query" id="query" placeholder="Search" aria-label="Search" />
-<input type="submit" name="commit" value="Search" /></form>
-          </div>
-        </div>
-      </div>
-    </header>
-  </div>
-  <div class="layout__content">
-
-
-
-  <main role="main">
-    <div class="promoted-articles-section container" data-home-page>
-  <div class="container-inner">
-
-    
-  </div>
-</div>
-
-<div class="container container--grey clearfix">
-  <div class="container-inner">
-    
-      
-      <div class="knowledge-base" id="category-list">
-        <h2 class="category-list-title">Help Center</h2>
-        <ul class="row category-list">
-          
-            <li class="column column column--sm-6 category-list-item" id="38346087311508">
-              <a class="category-list-item__link" href="/hc/en-us/categories/38346087311508-Questions-About-My-Loan">
-                <div class="category-list-item__icon">
-
-                  <!-- Tala -->
-                  
-                  
-                  
-                  
-                  
-
-                  <!-- Tala Mexico -->
-                  
-                  
-                  
-                  
-                  
-
-                        <!-- Tala Philippines -->
-                 
-                    <img src="/hc/theming_assets/01JY1FHFJR9J8SRXD6VMB8X823">
-                  
-                  
-                  
-                  
-                  
-                  
-                   
-                  
-                  
-                  
-
-                  <!-- Tala India -->
-                  
-                  
-                  
-                  
-                  
-                </div>
-                <h2 class="h5 category-list-item__title">Questions About My Loan</h2>
-                <p class="meta"></p>
-              </a>
-            </li>
-          
-            <li class="column column column--sm-6 category-list-item" id="38346041081876">
-              <a class="category-list-item__link" href="/hc/en-us/categories/38346041081876-I-Can-t-Log-In-or-Other-Technical-Issues">
-                <div class="category-list-item__icon">
-
-                  <!-- Tala -->
-                  
-                  
-                  
-                  
-                  
-
-                  <!-- Tala Mexico -->
-                  
-                  
-                  
-                  
-                  
-
-                        <!-- Tala Philippines -->
-                 
-                  
-                    <img src="/hc/theming_assets/01JY1FHA3KDDTXZ18TET3W5PCV">
-                  
-                  
-                  
-                  
-                  
-                   
-                  
-                  
-                  
-
-                  <!-- Tala India -->
-                  
-                  
-                  
-                  
-                  
-                </div>
-                <h2 class="h5 category-list-item__title">I Can&#39;t Log In or Other Technical Issues</h2>
-                <p class="meta"></p>
-              </a>
-            </li>
-          
-            <li class="column column column--sm-6 category-list-item" id="38345819296916">
-              <a class="category-list-item__link" href="/hc/en-us/categories/38345819296916-Issue-Receiving-My-Loan">
-                <div class="category-list-item__icon">
-
-                  <!-- Tala -->
-                  
-                  
-                  
-                  
-                  
-
-                  <!-- Tala Mexico -->
-                  
-                  
-                  
-                  
-                  
-
-                        <!-- Tala Philippines -->
-                 
-                  
-                  
-                    <img src="/hc/theming_assets/01JY1FHCYVFV7J2MZYYANPV2MF">
-                  
-                  
-                  
-                  
-                   
-                  
-                  
-                  
-
-                  <!-- Tala India -->
-                  
-                  
-                  
-                  
-                  
-                </div>
-                <h2 class="h5 category-list-item__title">Issue Receiving My Loan</h2>
-                <p class="meta"></p>
-              </a>
-            </li>
-          
-            <li class="column column column--sm-6 category-list-item" id="38345478080660">
-              <a class="category-list-item__link" href="/hc/en-us/categories/38345478080660-Questions-About-Cashing-Out">
-                <div class="category-list-item__icon">
-
-                  <!-- Tala -->
-                  
-                  
-                  
-                  
-                  
-
-                  <!-- Tala Mexico -->
-                  
-                  
-                  
-                  
-                  
-
-                        <!-- Tala Philippines -->
-                 
-                  
-                  
-                  
-                  
-                  
-                    <img src="/hc/theming_assets/01JY1FHE6V2RY96BAHG6BT8B9S">
-                  
-                   
-                  
-                  
-                  
-
-                  <!-- Tala India -->
-                  
-                  
-                  
-                  
-                  
-                </div>
-                <h2 class="h5 category-list-item__title">Questions About Cashing Out</h2>
-                <p class="meta"></p>
-              </a>
-            </li>
-          
-            <li class="column column column--sm-6 category-list-item" id="38345378381844">
-              <a class="category-list-item__link" href="/hc/en-us/categories/38345378381844-I-m-Going-to-Be-Late-With-My-Payment">
-                <div class="category-list-item__icon">
-
-                  <!-- Tala -->
-                  
-                  
-                  
-                  
-                  
-
-                  <!-- Tala Mexico -->
-                  
-                  
-                  
-                  
-                  
-
-                        <!-- Tala Philippines -->
-                 
-                  
-                  
-                  
-                  
-                    <img src="/hc/theming_assets/01JY1FHBKCSVVN31W5P0VC91F8">
-                  
-                  
-                   
-                  
-                  
-                  
-
-                  <!-- Tala India -->
-                  
-                  
-                  
-                  
-                  
-                </div>
-                <h2 class="h5 category-list-item__title">I&#39;m Going to Be Late With My Payment</h2>
-                <p class="meta"></p>
-              </a>
-            </li>
-          
-            <li class="column column column--sm-6 category-list-item" id="38345207284372">
-              <a class="category-list-item__link" href="/hc/en-us/categories/38345207284372-Questions-about-Repayment">
-                <div class="category-list-item__icon">
-
-                  <!-- Tala -->
-                  
-                  
-                  
-                  
-                  
-
-                  <!-- Tala Mexico -->
-                  
-                  
-                  
-                  
-                  
-
-                        <!-- Tala Philippines -->
-                 
-                  
-                  
-                  
-                  
-                  
-                   
-                    <img src="/hc/theming_assets/01JY1FHGVEAZWFBE3M32KXMFVY">
-                  
-                  
-                  
-                  
-
-                  <!-- Tala India -->
-                  
-                  
-                  
-                  
-                  
-                </div>
-                <h2 class="h5 category-list-item__title">Questions about Repayment</h2>
-                <p class="meta"></p>
-              </a>
-            </li>
-          
-            <li class="column column column--sm-6 category-list-item" id="16515892880532">
-              <a class="category-list-item__link" href="/hc/en-us/categories/16515892880532-Applying-for-a-Loan">
-                <div class="category-list-item__icon">
-
-                  <!-- Tala -->
-                  
-                  
-                  
-                  
-                  
-
-                  <!-- Tala Mexico -->
-                  
-                  
-                  
-                  
-                  
-
-                        <!-- Tala Philippines -->
-                 
-                  
-                  
-                  
-                  
-                  
-                   
-                  
-                  
-                  
-                    <img src="/hc/theming_assets/01JY1FH7JQ4YA5PYSBW57CZMYB">
-                  
-
-                  <!-- Tala India -->
-                  
-                  
-                  
-                  
-                  
-                </div>
-                <h2 class="h5 category-list-item__title">Applying for a Loan</h2>
-                <p class="meta"></p>
-              </a>
-            </li>
-          
-            <li class="column column column--sm-6 category-list-item" id="360001777311">
-              <a class="category-list-item__link" href="/hc/en-us/categories/360001777311-General-Information-about-Tala">
-                <div class="category-list-item__icon">
-
-                  <!-- Tala -->
-                  
-                  
-                  
-                  
-                  
-
-                  <!-- Tala Mexico -->
-                  
-                  
-                  
-                  
-                  
-
-                        <!-- Tala Philippines -->
-                 
-                  
-                  
-                  
-                  
-                  
-                   
-                  
-                    <img src="/hc/theming_assets/01JY1FH8W2TQ0HM9X69YQMQ0WG">
-                  
-                  
-                  
-
-                  <!-- Tala India -->
-                  
-                  
-                  
-                  
-                  
-                </div>
-                <h2 class="h5 category-list-item__title">General Information about Tala</h2>
-                <p class="meta"></p>
-              </a>
-            </li>
-          
-        </ul>
-
-      </div>
-      
-    
-  </div>
-</div>
-<!-- Start of talaphilippines Zendesk Widget script -->
-<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=ae165ec5-8117-46fb-be88-af8650a32e14"> </script>
-<!-- End of talaphilippines Zendesk Widget script -->
-<script type="text/javascript">
-window.zESettings = { 
-  webWidget: { 
-    chat: { 
-      menuOptions: { 
-        emailTranscript: false 
-      },
-      departments: {
-        enabled: null
-      }
-    },
-    contactForm: {
-      ticketForms: [{ id: 30343703737748 }] // Only show form 30343703737748
-    },
-    offset: { horizontal: '20px', vertical: '100px' },
-    launcher: {
-      label: {
-        'en-US': 'How may we help you?',
-        '*': 'How may we help you?'
-      },
-      color: 'white' // Set label color to white
-    }
-  }
-};
-
-</script>
-
-<script>
-  zE('webWidget:on', 'load', function () {
-    zE('webWidget', 'open');
-  });
-</script>
-
-  </main>
-
-  </div>
-<div class="layout__footer">
-  <footer class="footer">
-    <div class="footer__wrapper container">
-      <section class="footer-submit-ticket is-hidden" data-footer-submit-ticket>
-        <h2 class="footer-submit-ticket__title">
-          
-            Can&#39;t find what you&#39;re looking for?
-          
-        </h2>
-        <h4 class="footer-submit-ticket__subtitle">
-          
-            Let us help you right now!
-          
-        </h4>
-        
-       <a class="btn btn--default footer-submit-ticket__btn" href="/hc/en-us/requests/new?ticket_form_id=30343703737748">Submit a request</a>
-        
-      </section>
-      <div class="container-inner footer__inner">
-        <div class="footer__col copyright">
-          <p>&copy; Tala Philippines</p>
-          </p>
-        </div>
-        <div class="footer__col footer__col--social-links">
-          <div>
-            
-              <a href="https://www.facebook.com/talamobile/" target="_blank" class="footer-social-link fab fa-facebook-f"></a>
-            
-            
-              <a href="https://twitter.com/talamobile?lang=en" target="_blank" class="footer-social-link fab fa-twitter"></a>
-            
-            
-            
-              <a href="https://www.linkedin.com/company/tala-mobile/" target="_blank" class="footer-social-link fab fa-linkedin"></a>
-            
-            
-            
-              <a href="https://www.instagram.com/talamobile/?hl=en" target="_blank" class="footer-social-link fab fa-instagram"></a>
-            
-          </div>
-          
-            <div class="dropdown language-selector" aria-haspopup="true">
-              <a class="dropdown-toggle">
-                English (US)
-              </a>
-              <span class="dropdown-menu" role="menu">
-                
-                  <a href="/hc/change_language/fil?return_to=%2Fhc%2Ffil" dir="ltr" rel="nofollow" role="menuitem">
-                    Filipino
-                  </a>
-                
-              </span>
-            </div>
-          
-        </div>
-      </div>
     </div>
-  </footer>
-</div>
-</div>
 
+    <div class="container">
+        <div class="search-section">
+            <h2 style="text-align: center; margin-bottom: 1rem; color: #1e4a4a;">What can we help you with?</h2>
+            <div class="search-box">
+                <input type="text" placeholder="Search for help articles..." id="searchInput">
+                <button onclick="searchFAQ()">Search</button>
+            </div>
+        </div>
 
+        <div class="faq-categories">
+            <div class="category-card">
+                <h3><i class="fas fa-money-bill-wave"></i> Questions About My Loan</h3>
+                <ul>
+                    <li><a href="#loan-amount">How much can I borrow?</a></li>
+                    <li><a href="#loan-terms">What are the loan terms?</a></li>
+                    <li><a href="#interest-rates">What are the interest rates?</a></li>
+                    <li><a href="#loan-approval">How long does approval take?</a></li>
+                    <li><a href="#loan-extension">Can I extend my loan?</a></li>
+                </ul>
+            </div>
 
+            <div class="category-card">
+                <h3><i class="fas fa-sign-in-alt"></i> Login & Technical Issues</h3>
+                <ul>
+                    <li><a href="#forgot-password">I forgot my password</a></li>
+                    <li><a href="#account-locked">My account is locked</a></li>
+                    <li><a href="#app-issues">App not working properly</a></li>
+                    <li><a href="#update-app">How to update the app</a></li>
+                    <li><a href="#technical-support">Contact technical support</a></li>
+                </ul>
+            </div>
 
+            <div class="category-card">
+                <h3><i class="fas fa-credit-card"></i> Receiving My Loan</h3>
+                <ul>
+                    <li><a href="#disbursement-time">When will I receive my loan?</a></li>
+                    <li><a href="#bank-account">How to add bank account</a></li>
+                    <li><a href="#gcash">Using GCash for disbursement</a></li>
+                    <li><a href="#disbursement-failed">Disbursement failed</a></li>
+                    <li><a href="#track-disbursement">Track my disbursement</a></li>
+                </ul>
+            </div>
 
-  <!-- / -->
+            <div class="category-card">
+                <h3><i class="fas fa-cash-register"></i> Cashing Out</h3>
+                <ul>
+                    <li><a href="#cash-out-options">Cash out options</a></li>
+                    <li><a href="#atm-withdrawal">ATM withdrawal</a></li>
+                    <li><a href="#bank-transfer">Bank transfer</a></li>
+                    <li><a href="#cash-out-fees">Cash out fees</a></li>
+                    <li><a href="#cash-out-limit">Cash out limits</a></li>
+                </ul>
+            </div>
 
-  
-  <script src="//static.zdassets.com/hc/assets/en-us.138648974aa45656c358.js"></script>
-  <script src="https://talasupport.zendesk.com/auth/v2/host/without_iframe.js" data-brand-id="360002513671" data-return-to="https://talaphilippines.zendesk.com/hc/en-us" data-theme="hc" data-locale="en-us" data-auth-origin="360002513671,false,true"></script>
+            <div class="category-card">
+                <h3><i class="fas fa-clock"></i> Payment Issues</h3>
+                <ul>
+                    <li><a href="#late-payment">I'm going to be late with payment</a></li>
+                    <li><a href="#payment-methods">Payment methods</a></li>
+                    <li><a href="#payment-failed">Payment failed</a></li>
+                    <li><a href="#partial-payment">Partial payment</a></li>
+                    <li><a href="#payment-extension">Request payment extension</a></li>
+                </ul>
+            </div>
 
-  <script type="text/javascript">
-  /*
+            <div class="category-card">
+                <h3><i class="fas fa-shield-alt"></i> Security & Privacy</h3>
+                <ul>
+                    <li><a href="#data-security">How is my data protected?</a></li>
+                    <li><a href="#privacy-policy">Privacy policy</a></li>
+                    <li><a href="#suspicious-activity">Report suspicious activity</a></li>
+                    <li><a href="#account-security">Account security tips</a></li>
+                    <li><a href="#data-deletion">Request data deletion</a></li>
+                </ul>
+            </div>
+        </div>
 
-    Greetings sourcecode lurker!
+        <div class="contact-section">
+            <h2>Still need help?</h2>
+            <p>Can't find what you're looking for? Contact our support team.</p>
+            <div class="contact-buttons">
+                <a href="mailto:support@tala.ph" class="contact-btn">
+                    <i class="fas fa-envelope"></i> Email Support
+                </a>
+                <a href="tel:+6328888888" class="contact-btn">
+                    <i class="fas fa-phone"></i> Call Us
+                </a>
+                <a href="#" class="contact-btn" onclick="openChat()">
+                    <i class="fas fa-comments"></i> Live Chat
+                </a>
+            </div>
+        </div>
+    </div>
 
-    This is for internal Zendesk and legacy usage,
-    we don't support or guarantee any of these values
-    so please don't build stuff on top of them.
+    <div class="floating-chat" onclick="openChat()">
+        <i class="fas fa-comments"></i>
+    </div>
 
-  */
-
-  HelpCenter = {};
-  HelpCenter.account = {"subdomain":"talasupport","environment":"production","name":"Tala"};
-  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":"","role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","is_admin":false,"organizations":[],"groups":[]};
-  HelpCenter.internal = {"asset_url":"//static.zdassets.com/hc/assets/","web_widget_asset_composer_url":"https://static.zdassets.com/ekr/snippet.js","current_session":{"locale":"en-us","csrf_token":"hc:hcobject:server:QaHa3uTZBOXnl8x0ndr7cKpYbgcY0Ol_2zAZOX05my80IhBFcnRBoi8D7pC6dhKKjq3eVMNwT5FOkNpl2-3eTg","shared_csrf_token":null},"usage_tracking":{"event":"front_page_viewed","data":"BAh7BjoKX21ldGF7DDoPYWNjb3VudF9pZGkDheggOhNoZWxwX2NlbnRlcl9pZGwrCDuRtNFTADoNYnJhbmRfaWRsKwgHa9LRUwA6DHVzZXJfaWQwOhN1c2VyX3JvbGVfbmFtZUkiDkFOT05ZTU9VUwY6BkVUOgtsb2NhbGVJIgplbi11cwY7C1Q6GmFub255bW91c190cmFja2luZ19pZDA=--ce48edc533a3369a23c7065fda4a8ecace375006","url":"https://talaphilippines.zendesk.com/hc/activity"},"current_record_id":null,"current_record_url":null,"current_record_title":null,"current_text_direction":"ltr","current_brand_id":360002513671,"current_brand_name":"Tala Philippines","current_brand_url":"https://talaphilippines.zendesk.com","current_brand_active":true,"current_path":null,"show_autocomplete_breadcrumbs":true,"user_info_changing_enabled":false,"has_user_profiles_enabled":false,"has_end_user_attachments":true,"user_aliases_enabled":false,"has_anonymous_kb_voting":true,"has_multi_language_help_center":true,"show_at_mentions":false,"embeddables_config":{"embeddables_web_widget":true,"embeddables_help_center_auth_enabled":false,"embeddables_connect_ipms":false},"answer_bot_subdomain":"static","general_settings_url":"https://talaphilippines.zendesk.com/hc/admin/general_settings?locale=en-us","user_segments_url":"https://talasupport.zendesk.com/knowledge/user_segments?brand_id=360002513671","has_gather":true,"has_ckeditor":false,"has_community_enabled":false,"has_community_badges":true,"has_community_post_content_tagging":false,"has_gather_content_tags":true,"has_guide_content_tags":true,"has_user_segments":true,"has_answer_bot_web_form_enabled":false,"has_garden_modals":false,"theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-2-preview","is_preview":false,"has_alternate_templates":true,"arrange_articles_url":"https://talasupport.zendesk.com/knowledge/arrange?brand_id=360002513671","article_verification_url":"https://talasupport.zendesk.com/knowledge/verification?brand_id=360002513671","has_article_verification":true,"guide_language_settings_url":"https://talaphilippines.zendesk.com/hc/admin/language_settings?locale=en-us","docs_importer_url":"https://talasupport.zendesk.com/knowledge/import_articles?brand_id=360002513671","content_tags_url":"https://talasupport.zendesk.com/knowledge/content_tags?brand_id=360002513671","community_badges_url":"https://talasupport.zendesk.com/knowledge/community_badges?brand_id=360002513671","community_settings_url":"https://talasupport.zendesk.com/knowledge/community_settings?brand_id=360002513671","gather_plan_state":"subscribed","search_settings_url":"https://talasupport.zendesk.com/knowledge/search_settings?brand_id=360002513671","has_search_settings_in_plan":true,"theming_api_version":1,"theming_settings":{"toggle_translations":false,"body_bg":"#fff","brand_primary":"#00B0B9","brand_secondary":"rgba(227, 127, 57, 1)","text_color":"#3D3935","link_color":"rgba(227, 127, 57, 1)","font_size_base":"16px","font_family_base":"'Roboto', sans-serif","line_height_base":"1.5","hero_show_image":"yes","hero_homepage_image":"/hc/theming_assets/01HZPHXE3123Z1GFS9WGP01A9Z","hero_unit_mask_bg":"#000","hero_unit_mask_opacity":"0","hero_title":"What can we help you with?","search_placeholder":"Type your question here...","button_color_1":"rgba(227, 127, 57, 1)","logo":"/hc/theming_assets/01HZPHXE7H31XV757Y00EAVTA7","logo_white":"/hc/theming_assets/01HZPHXECXWAX6K45W60G4J289","logo_height":"50px","favicon":"/hc/theming_assets/01HZPHXEGW41195K2KV9MMGZ0S","border_radius_base":"4px","toggle_promoted_articles":"no","toggle_category_list":"yes","brand_info":"#5bc0de","brand_success":"#00B0B9","brand_warning":"#74CCCC","brand_danger":"rgba(227, 127, 57, 1)","article_help_text":"Still need help?","topbar_text_color":"#fff","topbar_link_color":"#fff","topbar_button_color":"#fff","help_center_title":"Help Center","toggle_custom_link":true,"topbar_custom_link_title":"Website","topbar_custom_link_url":"https://tala.co/","footer_text_color":"#3D3935","footer_link_color":"#00B0B9","footer_social_link_color":"#3D3935","footer_submit_ticket_title":"Can't find what you're looking for?","footer_submit_ticket_subtitle":"Let us help you right now!","toggle_facebook_icon":true,"facebook_url":"https://www.facebook.com/talamobile/","toggle_twitter_icon":true,"twitter_url":"https://twitter.com/talamobile?lang=en","toggle_youtube_icon":false,"youtube_url":"https://www.youtube.com","toggle_linkedin_icon":true,"linkedin_url":"https://www.linkedin.com/company/tala-mobile/","toggle_instagram_icon":true,"instagram_url":"https://www.instagram.com/talamobile/?hl=en","toggle_pinterest_icon":false,"pinterest_url":"https://www.Pinterest.com/"},"has_pci_credit_card_custom_field":true,"help_center_restricted":false,"is_assuming_someone_else":false,"flash_messages":[],"user_photo_editing_enabled":true,"user_preferred_locale":"en-us","base_locale":"en-us","has_user_session_cookie_enabled":true,"has_custom_statuses_enabled":true,"has_hc_generative_answers_setting_enabled":true,"has_generative_search_with_zgpt_enabled":false,"has_guide_service_catalog":true,"has_service_catalog_search_poc":false,"has_remove_breadcrumbs":true,"has_csat_reverse_2_scale_in_mobile":false,"has_knowledge_navigation":false,"version":"v26430"};
-</script>
-
-  <script src="//static.zdassets.com/hc/assets/moment-4ef0d82f9fc65c8a28f659aa3430955f.js"></script>
-  <script src="//static.zdassets.com/hc/assets/hc_enduser-92a05ec5213a3450eeb06f23e0f37390.js"></script>
-  
-  
+    <script>
+        function searchFAQ() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            if (searchTerm.trim() === '') {
+                alert('Please enter a search term');
+                return;
+            }
+            
+            // Simple search functionality
+            const categories = document.querySelectorAll('.category-card');
+            let found = false;
+            
+            categories.forEach(category => {
+                const links = category.querySelectorAll('a');
+                let categoryFound = false;
+                
+                links.forEach(link => {
+                    if (link.textContent.toLowerCase().includes(searchTerm)) {
+                        categoryFound = true;
+                        found = true;
+                    }
+                });
+                
+                if (categoryFound) {
+                    category.style.display = 'block';
+                    category.style.border = '2px solid #20BEC6';
+                } else {
+                    category.style.display = 'none';
+                }
+            });
+            
+            if (!found) {
+                alert('No results found for "' + searchTerm + '"');
+                // Show all categories again
+                categories.forEach(category => {
+                    category.style.display = 'block';
+                    category.style.border = 'none';
+                });
+            }
+        }
+        
+        function openChat() {
+            alert('Live chat feature coming soon! For now, please contact us via email or phone.');
+        }
+        
+        // Clear search on Enter key
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchFAQ();
+            }
+        });
+        
+        // Reset search when input is cleared
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            if (e.target.value === '') {
+                const categories = document.querySelectorAll('.category-card');
+                categories.forEach(category => {
+                    category.style.display = 'block';
+                    category.style.border = 'none';
+                });
+            }
+        });
+    </script>
 </body>
 </html>
